@@ -5,10 +5,10 @@ src = $(shell find ./ -name "*.cpp")
 obj = $(src:%.cpp=%.o) 
 
 $(exe): $(obj)
-    $(cc) -o $(exe) $(obj)
+	$(cc) -o $(exe) $(obj)
 
 %.o: %.cpp $(inc)
-    $(cc) -c $< -o $@
+	$(cc) -c $< -o $@
 
 clean:
-    rm -rf $(obj) $(exe)
+	rm -rf $(obj) $(exe)
