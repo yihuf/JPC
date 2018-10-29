@@ -5,8 +5,8 @@ project(jpc)
 add_subdirectory(source)
 
 add_executable(http_server
-    $<TARGET:http>
-    $<TARGET:main> 
+    $<TARGET_OBJECTS:http>
+    $<TARGET_OBJECTS:main> 
 )
 
 
