@@ -22,7 +22,7 @@ link_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/lib64
 )
 
-target_link_libraries(
+target_link_libraries(http_server
     crypto
     ssl
     PocoJSON
