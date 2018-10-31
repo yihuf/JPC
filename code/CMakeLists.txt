@@ -17,6 +17,11 @@ link_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/lib64
 )
 
+add_executable(http_server
+    $<TARGET_OBJECTS:http>
+    $<TARGET_OBJECTS:main> 
+)
+
 target_link_libraries(http_server
     crypto
     ssl
@@ -30,7 +35,3 @@ target_link_libraries(http_server
     PocoUtild
 )
 
-add_executable(http_server
-    $<TARGET_OBJECTS:http>
-    $<TARGET_OBJECTS:main> 
-)
