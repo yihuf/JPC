@@ -11,7 +11,7 @@ add_executable(http_server
 
 message(${CMAKE_CURRENT_SOURCE_DIR})
 
-include_directory(
+include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../third/poco/include
     ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/include
     ${CMAKE_CURRENT_SOURCE_DIR}/include
