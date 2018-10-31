@@ -17,8 +17,14 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+link_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third/poco/lib64
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/lib64
+)
 
 target_link_libraries(
+    crypto
+    ssl
     PocoJSON
     PocoJSONd
     PocoFoundation
