@@ -4,11 +4,6 @@ project(jpc)
 
 add_subdirectory(source)
 
-add_executable(http_server
-    $<TARGET_OBJECTS:http>
-    $<TARGET_OBJECTS:main> 
-)
-
 message(${CMAKE_CURRENT_SOURCE_DIR})
 
 include_directories(
@@ -33,4 +28,9 @@ target_link_libraries(http_server
     PocoNetd
     PocoUtil
     PocoUtild
+)
+
+add_executable(http_server
+    $<TARGET_OBJECTS:http>
+    $<TARGET_OBJECTS:main> 
 )
