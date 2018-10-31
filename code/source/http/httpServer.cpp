@@ -95,7 +95,7 @@ void FormRequestHandler::handleRequest(HTTPServerRequest& request, HTTPServerRes
 	ostr << "</body>\n";
 }
 
-int http_server::main(const std::vector<std::string>& args)
+int httpServer::main(const std::vector<std::string>& args)
 {
 	if (_helpRequested)
 	{
