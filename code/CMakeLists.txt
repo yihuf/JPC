@@ -26,12 +26,9 @@ target_link_libraries(http_server
     crypto
     ssl
     PocoJSON
-    PocoJSONd
     PocoFoundation
-    PocoFoundationd
     PocoNet
-    PocoNetd
     PocoUtil
-    PocoUtild
+    PocoXML
 )
 
