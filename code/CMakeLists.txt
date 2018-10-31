@@ -4,17 +4,17 @@ project(jpc)
 
 add_subdirectory(source)
 
-message(${CMAKE_CURRENT_SOURCE_DIR})
+message(${PROJECT_SOURCE_DIR})
 
 include_directories(
-    ${CMAKE_CURRENT_SOURCE_DIR}/../third/poco/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/
+    ${PROJECT_SOURCE_DIR}/../third/poco/include
+    ${PROJECT_SOURCE_DIR}/../third/openssl/include
+    ${PROJECT_SOURCE_DIR}/include/
 )
 
 link_directories(
-    ${CMAKE_CURRENT_SOURCE_DIR}/../third/poco/lib64
-    ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/lib64
+    ${PROJECT_SOURCE_DIR}/../third/poco/lib64
+    ${PROJECT_SOURCE_DIR}/../third/openssl/lib64
 )
 
 add_executable(http_server
