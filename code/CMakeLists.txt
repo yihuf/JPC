@@ -9,8 +9,22 @@ add_executable(http_server
     $<TARGET_OBJECTS:main> 
 )
 
+message(${CMAKE_CURRENT_SOURCE_DIR})
 
-#target_link_libraries(
-#    http
-#    main
-#    )
+include_directory(
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third/poco/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+
+target_link_libraries(
+    PocoJSON
+    PocoJSONd
+    PocoFoundation
+    PocoFoundationd
+    PocoNet
+    PocoNetd
+    PocoUtil
+    PocoUtild
+)
