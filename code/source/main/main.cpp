@@ -1,4 +1,4 @@
-#include "http/http_server.h"
+#include "http/httpServer.h"
 
 
 
@@ -7,6 +7,6 @@
 
 int main(int argc, char** argv)
 {
-	http_server app;
+	httpServer app;
 	return app.run(argc, argv);
 }
