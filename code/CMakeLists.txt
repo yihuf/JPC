@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8)
 
 project(jpc)
 
-add_subdirectory(source)
-
 message(${PROJECT_SOURCE_DIR})
 
 include_directories(
@@ -11,6 +9,8 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/../third/openssl/include
     ${PROJECT_SOURCE_DIR}/include/
 )
+
+add_subdirectory(source)
 
 link_directories(
     ${PROJECT_SOURCE_DIR}/../third/poco/lib64
