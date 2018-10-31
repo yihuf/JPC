@@ -9,7 +9,7 @@ message(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../third/poco/include
     ${CMAKE_CURRENT_SOURCE_DIR}/../third/openssl/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/http
 )
 
 link_directories(
