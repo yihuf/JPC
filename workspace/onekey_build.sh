@@ -3,7 +3,7 @@
 cd ../
 git pull
 
-if [ $1x == 'debugx' ]
+if  [ $1x = 'debugx' ]
 then        
    echo 'debug'
 else
