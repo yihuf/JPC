@@ -5,12 +5,11 @@ git pull
 
 if  [ $1x = 'debugx' ]
 then        
-   echo 'debug'
-   export __DEBUG__
+   flag='-DCMAKE_BUILD_TYPE=Debug'
 else
-   echo 'release'
+   flag='-DCMAKE_BUILD_TYPE=Release'
 fi
 
 cd workspace/buildc/
-cmake ../../code
+cmake $flag ../../code
 make
