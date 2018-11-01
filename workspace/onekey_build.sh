@@ -3,11 +3,11 @@
 cd ../
 git pull
 
-if $1x = 'debugx'
+if [ $1x == 'debugx' ]
 then        
-echo 'debug'
+   echo 'debug'
 else
-echo 'release'
+   echo 'release'
 fi
 
 cd workspace/buildc/
