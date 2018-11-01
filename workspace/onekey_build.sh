@@ -6,6 +6,7 @@ git pull
 if  [ $1x = 'debugx' ]
 then        
    echo 'debug'
+   export __DEBUG__
 else
    echo 'release'
 fi

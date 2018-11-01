@@ -4,6 +4,10 @@ project(jpc)
 
 message(${PROJECT_SOURCE_DIR})
 
+if(__DEBUG__)
+message('__DEBUG__')
+endif()
+
 set(CMAKE_CXX_FLAGS  -std=c++11)
 
 add_definitions(-D__HELP__)
