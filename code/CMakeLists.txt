@@ -4,6 +4,11 @@ project(jpc)
 
 message(${PROJECT_SOURCE_DIR})
 
+set(CMAKE_CXX_FLAGS  -std=c++11)
+
+add_definitions(-D__HELP__)
+
+
 include_directories(
     ${PROJECT_SOURCE_DIR}/../third/poco/include
     ${PROJECT_SOURCE_DIR}/../third/openssl/include
