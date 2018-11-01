@@ -3,7 +3,8 @@ cmake_minimum_required(VERSION 2.8)
 project(jpc)
 
 message(${PROJECT_SOURCE_DIR})
-message(${CMAKE_BUILD_TYPE})
+message('you are building a ${CMAKE_BUILD_TYPE} version')
+
 set(CMAKE_CXX_FLAGS  -std=c++11)
 
 add_definitions(-D__HELP__)
