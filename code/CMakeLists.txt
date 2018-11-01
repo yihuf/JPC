@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 project(jpc)
 
 message(${PROJECT_SOURCE_DIR})
-message(${DCMAKE_BUILD_TYPE})
+message(${CMAKE_BUILD_TYPE})
 set(CMAKE_CXX_FLAGS  -std=c++11)
 
 add_definitions(-D__HELP__)
