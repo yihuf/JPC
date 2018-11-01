@@ -4,7 +4,7 @@ project(jpc)
 
 message(${PROJECT_SOURCE_DIR})
 
-if(__DEBUG__)
+if($ENV{__DEBUG__})
 message('__DEBUG__')
 endif()
 
